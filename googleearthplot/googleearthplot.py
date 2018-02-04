@@ -22,7 +22,7 @@ class googleearthplot:
         """
         Plot Line Chart from CSVfile
         """
-        print "[PlotLineChartFromCSV] plotting a line chart from csv file:" + filepath
+        print("[PlotLineChartFromCSV] plotting a line chart from csv file:" + filepath)
         data = pandas.read_csv(filepath)
 
         if "height" in data:
@@ -66,7 +66,7 @@ class googleearthplot:
         ls.style.linestyle.width = width
         ls.style.linestyle.color = self.GetColorObject(color)
 
-        print "[PlotLineChart]name:" + name + ",color:" + color + ",width:" + str(width)
+        print("[PlotLineChart]name:" + name + ",color:" + color + ",width:" + str(width))
 
     def PlotBarChart(self, lat, lon, num, size=1, name="", color="red", addLabel=False):
         """
